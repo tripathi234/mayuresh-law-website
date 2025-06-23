@@ -1,3 +1,4 @@
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,10 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  color: #fff;
 }
 
+/* 👋 Welcome Overlay */
 .overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.9);
@@ -35,6 +38,7 @@ body {
   100% { opacity: 0; visibility: hidden; }
 }
 
+/* 🔗 Navigation */
 nav {
   background-color: #2e2e2e;
   padding: 10px;
@@ -49,6 +53,11 @@ nav a {
   cursor: pointer;
 }
 
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* 🖼 Slideshow */
 .slideshow-container {
   max-width: 700px;
   margin: 40px auto;
@@ -71,6 +80,7 @@ nav a {
   object-fit: cover;
 }
 
+/* 🎤 Slide Caption */
 .overlay-text {
   position: absolute;
   bottom: 20px;
@@ -83,6 +93,78 @@ nav a {
   text-align: center;
 }
 
+/* 📦 Website Sections */
 section {
   padding: 20px;
-  back
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* 📧 Forms */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* 🧑‍⚖️ Admin Photo */
+img.photo {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+/* 🔻 Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+/* 🔙 Back/Home Buttons */
+.back-button, .admin-button {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-button:hover, .admin-button:hover {
+  background-color: #e6b800;
+}
+
+
