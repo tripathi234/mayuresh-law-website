@@ -1,1 +1,50 @@
-<!DOCTYPE html><html><head><title>डैशबोर्ड</title></head><body><h2>Admin Dashboard</h2></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - Mayuresh Law Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      text-align: center;
+      background-color: #1e1e1e;
+    }
+    iframe {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    h1 {
+      color: #ffcc00;
+      margin-top: 30px;
+    }
+    .back-button {
+      margin-top: 20px;
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .back-button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>👨‍⚖️ एडमिन डैशबोर्ड</h1>
+  <p style="color: white;">यहां से आप वेबसाइट का कंटेंट Google Sheet के माध्यम से अपडेट कर सकते हैं।</p>
+
+  <!-- 🔗 Google Sheet Web App Link (Deployed by You) -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbwhsvMPudO-R8XbFA7YhxFWICFyT367ymF5-HSGfcx-fkIB8GZqsDojoGPO9hIvIp0V/exec"
+    width="95%" height="600px">
+  </iframe>
+
+  <br>
+  <a href="index.html" class="back-button" onclick="document.getElementById('clickSound').play()">🏠 होम पेज पर जाएं</a>
+
+  <audio id="clickSound" src="notification-alert-8-331718.mp3" preload="auto"></audio>
+</body>
+</html>
