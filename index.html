@@ -1,39 +1,17 @@
+
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mayuresh Law Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayuresh Law</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <audio id="clickSound" src="notification-alert-8-331718.mp3" preload="auto"></audio>
-
-  <div class="welcome-screen" id="welcome">
-    <h1>🚩 जय हिन्द! Welcome to Mayuresh Tripathi's Law Website 🚩</h1>
-    <p>भारतीय कानून, संविधान और न्याय का ज्ञान</p>
-  </div>
-
-  <div class="main-content" style="display:none;">
-    <header>
-      <img src="flag.jpg" alt="Indian Flag" class="flag">
-      <h1>Mayuresh Tripathi's Law Website</h1>
-    </header>
-
-    <section class="slideshow">
-      <img src="Court building.jpg" alt="High Court" class="slide-img" />
-      <img src="slogan image.jpg" alt="Law Slogan" class="slide-img" />
-    </section>
-
-    <section class="about">
-      <h2>🇮🇳 भारतीय कानून की जानकारी</h2>
-      <p>संविधान, भारतीय दंड संहिता (IPC), नागरिक कानून और और भी बहुत कुछ...</p>
-      <a href="admin.html" class="admin-button" onclick="playClick()">🔐 Admin Login</a>
-    </section>
-
-    <footer>
-      <p>© 2025 Mayuresh Tripathi | Inspired by Indian Law 🇮🇳</p>
-    </footer>
-  </div>
+  <div class="slideshow">Welcome to Mayuresh Law Website</div>
+  <button onclick="playSound()">Play Sound</button>
+  <input type="password" id="adminPass" placeholder="Enter Admin Password" />
+  <button onclick="checkLogin()">Login</button>
 </body>
 </html>
