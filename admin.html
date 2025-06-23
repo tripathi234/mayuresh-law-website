@@ -1,1 +1,84 @@
-<!DOCTYPE html><html><head><title>एडमिन लॉगिन</title></head><body><h2>Login Page</h2></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>एडमिन लॉगिन - Mayuresh Law Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      text-align: center;
+      background-color: #111;
+      padding-top: 100px;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      width: 80%;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: none;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 30px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e6b800;
+    }
+
+    h2 {
+      color: #ffcc00;
+    }
+
+    .error-msg {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>🔒 एडमिन लॉगिन</h2>
+    <p>कृपया पासवर्ड दर्ज करें:</p>
+    <input type="password" id="adminPass" placeholder="पासवर्ड" />
+    <br>
+    <button onclick="checkPassword()">लॉगिन</button>
+    <p id="error" class="error-msg"></p>
+  </div>
+
+  <audio id="errorSound" src="notification-alert-8-331718.mp3" preload="auto"></audio>
+
+  <script>
+    function checkPassword() {
+      const pass = document.getElementById("adminPass").value;
+      const correct = "mayuresh@123";
+
+      if (pass === correct) {
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("error").textContent = "❌ गलत पासवर्ड!";
+        document.getElementById("errorSound").play();
+      }
+    }
+  </script>
+</body>
+</html>
