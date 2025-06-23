@@ -1,0 +1,16 @@
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+.slideshow {
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeIn 3s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
